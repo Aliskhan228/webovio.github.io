@@ -15,6 +15,7 @@
     background: url(../images/background.png) center center/cover no-repeat;
     padding: 24px 0 0 0;
     position: relative; 
+    z-index: -5;
     .header {
         height: 43px;
         display: flex;
@@ -77,17 +78,14 @@
     .partners {
         width: 1276px;
         height: 227px;
-        // position: absolute;
-        // left: 627px;
-        // top: 890px;
         margin-left: 231px;
-        margin-top: -197px;
+        margin-top: -81px;
         background-color: rgb(255, 255, 255);
         box-shadow: 65px 60px 70px 30px rgba(0, 0, 0, 0.10);
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        // z-index: 50;
+        z-index: 20;
         &__images {
             width: 156px;
             height: 113px;
@@ -96,15 +94,21 @@
     .strategy {
         height: 795px;
         width: 100%;
-        padding-top: 120px;
-        display: flex;
+        display: grid;
         background-color: rgb(255, 255, 255);
-        z-index: -556;
+        position: relative;
+        z-index: -2;
+        &__left {
+            width: 475px;
+            height: 366px;
+            margin-top: 120px;
+        }
         &__subtitle {
             font-family: Poppins;
             font-weight: normal;
             font-size: 14px;
             color: rgba(77, 83, 60, 0.9);
+            margin-top: 120px;
         }
         &__title {
             font-family: Poppins;
@@ -133,7 +137,13 @@
         }
         &__right {
             width: 474px;
-            height: 348px;
+            height: 644px;
+            box-shadow: 30px 60px 70px 5px rgba(0, 0, 0, 0.10);
+            position: absolute;
+            left: 1032px;
+            top: 0px;
+            background-color: white;
+            z-index: -2;
             &-text {
                 width: 426px;
                 font-family: Poppins;
@@ -142,6 +152,34 @@
                 font-size: 24px;
                 line-height: 40px;
                 color: #4D533C;
+                margin-top: 256px;
+                margin-left: 40px;
+            }
+            &-person {
+                display: flex;
+                width: 358px;
+                height: 90px;
+                margin-left: 40px;
+                margin-top: 50px;
+            }
+            &-person-img {
+               height: 120px;
+               width: 120px;
+            }
+            &-person-name {
+                font-family: Poppins;
+                font-weight: bold;
+                font-size: 22px;
+                color: #4D533C;
+                margin-top: 14px;
+            }
+            &-person-descr {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #152934;
             }
         }
     }

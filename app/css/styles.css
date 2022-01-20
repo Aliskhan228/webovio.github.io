@@ -16,6 +16,7 @@
   background: url(../images/background.png) center center/cover no-repeat;
   padding: 24px 0 0 0;
   position: relative;
+  z-index: -5;
 }
 
 .hero .header {
@@ -94,7 +95,7 @@
   width: 1276px;
   height: 227px;
   margin-left: 231px;
-  margin-top: -197px;
+  margin-top: -81px;
   background-color: white;
   -webkit-box-shadow: 65px 60px 70px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 65px 60px 70px 30px rgba(0, 0, 0, 0.1);
@@ -107,6 +108,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 20;
 }
 
 .hero .partners__images {
@@ -117,12 +119,17 @@
 .hero .strategy {
   height: 795px;
   width: 100%;
-  padding-top: 120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   background-color: white;
-  z-index: -556;
+  position: relative;
+  z-index: -2;
+}
+
+.hero .strategy__left {
+  width: 475px;
+  height: 366px;
+  margin-top: 120px;
 }
 
 .hero .strategy__subtitle {
@@ -130,6 +137,7 @@
   font-weight: normal;
   font-size: 14px;
   color: rgba(77, 83, 60, 0.9);
+  margin-top: 120px;
 }
 
 .hero .strategy__title {
@@ -163,7 +171,14 @@
 
 .hero .strategy__right {
   width: 474px;
-  height: 348px;
+  height: 644px;
+  -webkit-box-shadow: 30px 60px 70px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 30px 60px 70px 5px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 1032px;
+  top: 0px;
+  background-color: white;
+  z-index: -2;
 }
 
 .hero .strategy__right-text {
@@ -174,5 +189,39 @@
   font-size: 24px;
   line-height: 40px;
   color: #4D533C;
+  margin-top: 256px;
+  margin-left: 40px;
+}
+
+.hero .strategy__right-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 358px;
+  height: 90px;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+.hero .strategy__right-person-img {
+  height: 120px;
+  width: 120px;
+}
+
+.hero .strategy__right-person-name {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 22px;
+  color: #4D533C;
+  margin-top: 14px;
+}
+
+.hero .strategy__right-person-descr {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #152934;
 }
 /*# sourceMappingURL=styles.css.map */
